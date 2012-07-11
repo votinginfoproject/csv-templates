@@ -1,0 +1,1 @@
+id,name,address_location_name,address_line1,address_line2,address_line3,address_city,address_state,address_zip,directions,voter_services,start_date,end_date,days_times_open

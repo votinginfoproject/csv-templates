@@ -1,0 +1,1 @@
+name,number,locality_id,ward,mail_only,ballot_style_image_url,id

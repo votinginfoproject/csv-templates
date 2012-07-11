@@ -1,0 +1,1 @@
+id,name,number,locality_id,electoral_district_id,ward,mail_only,polling_location_id,early_vote_site_id,ballot_style_image_url

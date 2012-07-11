@@ -1,0 +1,164 @@
+File Processed:
+Time Processed:
+
+----------------------
+Source Data
+----------------------
+
+Name:
+Vip ID:
+Datetime:
+
+----------------------
+Election Data
+----------------------
+
+Election ID:
+Election Date:
+Election Type:
+
+----------------------
+File Report
+----------------------
+
+Invalid Sections:
+Invalid Files:
+Valid Files:
+
+----------------------
+Element Counts
+----------------------
+
+source
+    - original:
+    - processed:
+election
+    - original:
+    - processed:
+state
+    - original:
+    - processed:
+locality
+    - original:
+    - processed:
+precinct
+    - original:
+    - processed:
+precint_split
+    - original:
+    - processed:
+election_administration
+    - original:
+    - processed:
+election_official
+    - original:
+    - processed:
+polling_location
+    - original:
+    - processed:
+street_segment
+    - original:
+    - processed:
+contest
+    - original:
+    - processed:
+ballot
+    - original:
+    - processed:
+candidate
+    - original:
+    - processed:
+
+----------------------
+Reported Issues Count
+----------------------
+
+source
+-errors:
+-warnings:
+-duplicates:
+
+election
+-errors:
+-warnings:
+-duplicates:
+
+state
+-errors:
+-warnings:
+-duplicates:
+
+locality
+-errors:
+-warnings:
+-duplicates:
+
+precinct
+-errors:
+-warnings:
+-duplicates:
+
+precint_split
+-errors:
+-warnings:
+-duplicates:
+
+election_administration
+-errors:
+-warnings:
+-duplicates:
+
+election_official
+-errors:
+-warnings:
+-duplicates:
+
+polling_location
+-errors:
+-warnings:
+-duplicates:
+
+street_segment
+-errors:
+-warnings:
+-duplicates:
+
+contest
+-errors:
+-warnings:
+-duplicates:
+
+ballot
+-errors:
+-warnings:
+-duplicates:
+
+candidate
+-errors:
+-warnings:
+-duplicates:
+
+----------------------
+Locality Breakdown
+----------------------
+
+Adams County:
+-errors:
+-warnings:
+-duplicates:
+
+Clark Count:
+-errors:
+-warnings:
+-duplicates:
+
+Franklin County
+-errors:
+-warnings:
+-duplicates:
+
+Washington County:
+-errors:
+-warnings:
+-duplicates:
+
