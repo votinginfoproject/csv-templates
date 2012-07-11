@@ -1,1 +1,1 @@
-first_street_segment_id,duplicate_ids,street_segment_address_range,street_segment_oeb
+base_segment_id,duplicate_ids,error_code,street_segment_address_range,street_segment_oeb

@@ -1,1 +1,1 @@
-element_name,id,duplicate_id
+element_name,id,error_code,duplicate_ids
