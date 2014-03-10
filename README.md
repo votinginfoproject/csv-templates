@@ -15,9 +15,9 @@ A few notes about the flat files before you begin:
 	```
 
 * Each file must be a comma delimited, UTF-8 file, preferably a .txt file. We can also convert .csv files to .txt. In addition to being UTF-8, the files should not contain non-ASCII characters.
-* The columns must be lower case, and they must match the column names and order of the examples in `data_templates`. It is usually ok to leave a column blank if you do not have that data, i.e. `candidate_url`.
+* The columns must match the column names and order of the examples in `data_templates`. It is usually ok to leave a column blank if you do not have that data, i.e. `candidate_url`.
 * When exporting your files, do not replace blank or empty fields with NULL.
-* Your data files should consist only of files that exist in the data_templates folder. You don't need to have every one of the files, but extra files will not work with the processor we have to compile the xml.
+* Your data files should consist only of files that exist in the data_templates folder. You don't need to have every one of the files, but extra files will not work with the processor we have to compile the XML.
 
 ## Individual file notes ##
 
@@ -25,11 +25,11 @@ Use the file templates provided in the `db_templates` folder
 
 ### These files must be included in every set of data files ###
 
-* **`election.txt`** &mdash; if you have more than one absentee request deadline, use the earlier of the two source.txt
+* **`election.txt`** &mdash; if you have more than one absentee request deadline, use the earlier of the two 
+* **`source.txt`**
 	
 ### These files will usually be included in your data file set ###
 
-* **`contest.txt`** &mdash; ensure that the second column, `electoral_district_id`, matches up to the ids in the `electoral_district.txt` file. If your data set contains ballot information, ensure that the column `ballot_id` corresponds to the IDs in the 'ballot.txt' file.
 * **`election_administration.txt`** &mdash; the `eo_id` column should correspond to the ids in the `election_official.txt` file
 * **`election_official.txt`**
 * **`electoral_district.txt`** &mdash; this contains any electoral district that you will have contest or ballot information for. The `number` column must contain only numbers.
@@ -41,30 +41,30 @@ Use the file templates provided in the `db_templates` folder
 * **`state.txt`** &mdash; most often, the state id will be a state's FIPS code
 * **`street_segment.txt`** &mdash; these must not overlap, or there will be errors when compiling the data into XML. We will provide you with the IDs of the overlapping segments, if your file contains them.
 
-### Only include these files if you are including candidate data ###
+### Include these files if you are including candidate data ###
 
 * **`candidate.txt`** &mdash; the column `sort_order` refers to the candidate's order on the ballot option
-
-### Only include these files if you are including ballot data ###
-
+* **`contest.txt`** &mdash; ensure that the second column, `electoral_district_id`, matches up to the ids in the `electoral_district.txt` file. If your data set contains ballot or candidate information, ensure that the column `ballot_id` corresponds to the IDs in the 'ballot.txt' file.
 * **`ballot.txt`** &mdash; use this file if you have referendum data for your ballots
 * **`ballot_candidate.txt`** &mdash; use this file if you have candidate data for your ballots
-* **`ballot_line_result.txt`**
+
+### Include these files if you are including ballot data ###
+
 * **`ballot_response.txt`** &mdash; this file details all possible responses to a contest in a ballot
-* **`custom_ballot.txt`**
-* **`custom_ballot_ballot_response.txt`**
+* **`custom_ballot.txt`** &mdash; only include this file if you have custom ballot data
+* **`custom_ballot_ballot_response.txt`** &mdash; only include this file if you have custom ballot data
 * **`referendum.txt`**
 * **`referendum_ballot_response.txt`**
 
-### Only include these files if you have early vote site data ###
+### Include these files if you have early vote site data ###
 
 * **`early_vote_site.txt`**
 * **`precinct_early_vote_site.txt`**
 * **`locality_early_vote_site.txt`** &mdash; you can use this file to link districts and early vote sites, if this is not done by precinct in your state
-* **`state_early_vote_site.txt`**
+* **`state_early_vote_site.txt`** &mdash; you can use this file to link state and early vote sites, if this is not done by precinct in your state
 
-### Only include these files if you have precincts that are split between electoral districts ###
+### Include these files if you have precincts that are split between electoral districts ###
 
 * **`precinct_split.txt`**
 * **`precinct_split_electoral_district.txt`** &mdash; like the `precinct_electoral_district.txt` file, this will usually have many records for each split with the id of each electoral district it falls under
-* **`precinct_split_polling_location.txt`**
+* **`precinct_split_polling_location.txt`** &mdash; use this file if polling locations are assigned by precinct split in your state
