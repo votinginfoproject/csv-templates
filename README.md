@@ -45,7 +45,7 @@ Use the file templates provided in the `db_templates` folder
 
 * **`candidate.txt`** &mdash; the column `sort_order` refers to the candidate's order on the ballot option
 * **`contest.txt`** &mdash; ensure that the second column, `electoral_district_id`, matches up to the ids in the `electoral_district.txt` file. If your data set contains ballot or candidate information, ensure that the column `ballot_id` corresponds to the IDs in the 'ballot.txt' file.
-* **`ballot.txt`** &mdash; use this file if you have referendum data for your ballots
+* **`ballot.txt`** &mdash; use this file to represent ballots
 * **`ballot_candidate.txt`** &mdash; use this file if you have candidate data for your ballots
 
 ### Include these files if you are including ballot data ###
