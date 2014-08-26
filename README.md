@@ -6,7 +6,9 @@ This repo contains three directories, two of which will be helpful as you build 
 ## About files in data_templates ##
 
 It is a good idea to read through the XML specification [located here](http://votinginfoproject.github.io/vip-specification/). It will give you a good idea of what your data will look like after the flat files are compiled into an XML file. In order for the data to compile correctly, the format of the flat files must match the templates exactly - identical layout and format. 
+
 A few notes about the flat files before you begin:
+
 * The XML specification states that each ID must be unique in a data file. Here, it is referring to an entire XML file, not an individual flat file. What that means is that every flat file you produce must have IDs that do not match IDs in any other file. For example, you cannot number your locality ID as 1-50 and your `election_official` ID as 1-50. To prevent this, we suggest pre-pending additional digits to ID fields that are not unique. For example, adding '222000' to the ID in `polling_locations.txt` and '333000' to the ID in precincts, etc. You can do this while running the data query by using a concatenate function. For example, in an Oracle database:
 
     ```sql
@@ -15,8 +17,13 @@ A few notes about the flat files before you begin:
 	```
 
 * Each file must be a comma delimited, UTF-8 file, preferably a .txt file. We can also convert .csv files to .txt. In addition to being UTF-8, the files should not contain non-ASCII characters.
+ 
+* Each file should be named exactly as the files are named in `data_templates`.
+ 
 * The columns must match the column names and order of the examples in `data_templates`. It is usually ok to leave a column blank if you do not have that data, i.e. `candidate_url`. If you have questions about whether a column is required or not, refer to the XML specification for that element: http://votinginfoproject.github.io/vip-specification/
+
 * When exporting your files, do not replace blank or empty fields with NULL.
+
 * Your data files should consist only of files that exist in the data_templates folder. You don't need to have every one of the files, but extra files will not work with the processor we have to compile the XML.
 
 ## Individual file notes ##
