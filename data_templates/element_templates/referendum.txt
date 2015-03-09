@@ -1,1 +1,0 @@
-id,title,subtitle,brief,text,pro_statement,con_statement,passage_threshold,effect_of_abstain,ballot_response_id,ballot_response_id_sort_order

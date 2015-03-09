@@ -1,1 +1,0 @@
-id,name,state_id,type,election_administration_id,early_vote_site_id

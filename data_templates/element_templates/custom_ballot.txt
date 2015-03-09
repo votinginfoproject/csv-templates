@@ -1,1 +1,0 @@
-id,heading,ballot_response_id,ballot_response_id_sort_order

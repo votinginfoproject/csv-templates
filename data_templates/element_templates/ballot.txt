@@ -1,1 +1,0 @@
-id,referendum_id,candidate_id,candidate_id_sort_order,custom_ballot_id,write_in,image_url
