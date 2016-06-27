@@ -1,0 +1,3 @@
+contest_id,ordered_ballot_selection_ids,id
+con001,"bs001 bs002 bs003",oc2025
+con002,"bs001",oc3000

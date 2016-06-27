@@ -1,0 +1,5 @@
+abbreviation,color,external_identifier_type,external_identifier_othertype,external_identifier_value,logo_uri,name,id
+REP,ff0000,,,,"http://example.com/elephant.png",Republican,par01
+DEM,0000ff,,,,"http://example.com/donkey.png",Democrat,par02
+GRN,efefef,,,,"http://example.com/tree.png”,Green,par03
+WFP,ee99aa,,,,"http://example.com/worker.png”,Working Families Party,par04
