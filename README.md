@@ -6,6 +6,24 @@ This repo contains five directories, which you can use to build your flat files 
 ## Version 5.0 ##
 The `vip_5.1_csv_templates` folder contains the structure of each type of file that can be used to publish VIP data in the 5.0 specification. The `vip_5.1_csv_examples` folder contains sample data.
 
+## Individual file notes ##
+
+Use the file templates provided in the `vip_5.1_csv_templates` folder
+
+### These files must be included in every set of data files ###
+
+* **`election.txt`** &mdash; if you have more than one absentee request deadline, use the earlier of the two 
+* **`source.txt`**
+* **`state.txt`** &mdash; most often, the state id will be a state's FIPS code
+	
+### These files will be included in your standard data file set (in addition to the required files above)###
+
+* **`election_administration.txt`** &mdash; the `eo_id` column should correspond to the ids in the `election_official.txt` file
+* **`locality.txt`** &mdash; this is the district directly below state, most often the county. Ensure the `state_id` column matches the id in the `state.txt` file and the `election_administration_id` column matches the id from the `election_administration.txt` file.
+* **`polling_location.txt`** &mdash; we understand that most `polling_location.txt` files will change, even after the locations are set in-state
+* **`precinct.txt`**
+* **`street_segment.txt`** &mdash; these must not overlap, or there will be errors when compiling the data into XML. We will provide you with the IDs of the overlapping segments, if your file contains them.
+
 ## Version 3.0 ##
 The `data_templates` folder contains the structure of each type of file that can be used in publishing VIP data. The `example_data` folder contains portions of the data files from NC, so you can look at an example of actual data. More information about the different VIP files is below.
 
