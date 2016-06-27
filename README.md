@@ -3,7 +3,10 @@ VIP Flat File Data
 ## For States ##
 This repo contains five directories, which you can use to build your flat files for the Voting Information Project. 
 
-## Version 3.0 3##
+## Version 5.0 ##
+The folder contains the structure of each type of file that can be used to publish VIP data in the 5.0 specification. The folder contains sample data.
+
+## Version 3.0 ##
 The `data_templates` folder contains the structure of each type of file that can be used in publishing VIP data. The `example_data` folder contains portions of the data files from NC, so you can look at an example of actual data. More information about the different VIP files is below.
 
 ## About files in data_templates ##
