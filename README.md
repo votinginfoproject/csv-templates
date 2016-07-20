@@ -24,6 +24,25 @@ Use the file templates provided in the `vip_5.1_csv_templates` folder
 * **`precinct.txt`**
 * **`street_segment.txt`** &mdash; these must not overlap, or there will be errors when compiling the data into XML. We will provide you with the IDs of the overlapping segments, if your file contains them.
 
+### These files will need to be included to display contest data for candidate contests###
+
+* **`contest.txt`** &mdash;
+* **`candidate.txt`** &mdash;
+* **`candidate_contest.txt`** &mdash;
+* **`candidate_selection.txt`** &mdash;
+* **`ballot_selection.txt`** &mdash;
+
+### These additonal files will need to be included to display contest data for referenda/propositions/ballot measures###
+
+* **`ballot_measure_contest.txt`** &mdash;
+* **`ballot_measure_selection.txt`** &mdash;
+
+### These additonal files will need to be included to display contest data for retention contests###
+
+* **`retention_contest.txt`** &mdash;
+
+
+
 ## Version 3.0 ##
 The `data_templates` folder contains the structure of each type of file that can be used in publishing VIP data. The `example_data` folder contains portions of the data files from NC, so you can look at an example of actual data. More information about the different VIP files is below.
 
