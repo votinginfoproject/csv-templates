@@ -4,7 +4,7 @@ VIP Flat File Data
 This repo contains five directories, which you can use to build your flat files for the Voting Information Project. 
 
 ## Version 5.1 ##
-The `vip_5.1_csv_templates` folder contains the structure of each type of file that can be used to publish VIP data in the 5.0 specification. The `vip_5.1_csv_examples` folder contains sample data.
+The `vip_5.1_csv_templates` folder contains the structure of each type of file that can be used to publish VIP data in the 5.0 specification. The `vip_5.1_csv_examples` folder contains sample data. The `VIP_51_diagram.svg` file shows a graphical mapping of the 5.1 CSV objects. 
 
 ## Individual file notes ##
 
