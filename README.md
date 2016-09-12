@@ -13,8 +13,8 @@ Use the file templates provided in the `vip_5.1_csv_templates` folder
 ### These files must be included in every set of data files ###
 
 * **`election.txt`** &mdash; if you have more than one absentee request deadline, use the earlier of the two 
-* **`source.txt`**
-* **`state.txt`** &mdash; most often, the state id will be a state's FIPS code
+* **`source.txt`**&mdash; most often, the VIP id will be a state's FIPS code
+* **`state.txt`** 
 	
 ### These files will be included in your standard data file set (in addition to the required files above)###
 
@@ -76,7 +76,7 @@ Use the file templates provided in the `db_templates` folder
 ### These files must be included in every set of data files ###
 
 * **`election.txt`** &mdash; if you have more than one absentee request deadline, use the earlier of the two 
-* **`source.txt`**
+* **`source.txt`** &mdash; most often, the VIP id will be a state's FIPS code
 	
 ### These files will be included in your standard data file set (in addition to the required files above)###
 
@@ -86,7 +86,7 @@ Use the file templates provided in the `db_templates` folder
 * **`polling_location.txt`** &mdash; we understand that most `polling_location.txt` files will change, even after the locations are set in-state
 * **`precinct.txt`**
 * **`precinct_polling_location.txt`**
-* **`state.txt`** &mdash; most often, the state id will be a state's FIPS code
+* **`state.txt`** 
 * **`street_segment.txt`** &mdash; these must not overlap, or there will be errors when compiling the data into XML. We will provide you with the IDs of the overlapping segments, if your file contains them.
 
 ### Include these files if you are including data for candidates on the ballot###
