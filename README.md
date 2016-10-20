@@ -31,6 +31,7 @@ Use the file templates provided in the `vip_5.1_csv_templates` folder
 * **`candidate_contest.txt`** &mdash;
 * **`candidate_selection.txt`** &mdash;
 * **`ballot_selection.txt`** &mdash;
+* **`office.txt`** &mdash;
 
 ### These additonal files will need to be included to display contest data for referenda/propositions/ballot measures###
 
